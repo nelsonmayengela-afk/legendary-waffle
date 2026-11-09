@@ -1,0 +1,53 @@
+
+{
+  "name": "𝐁𝐋𝐀𝐂𝐊-𝐌𝐃",
+  "description": "A simple commonjs WhatsApp bot",
+  "stack": "heroku-26",
+  "keywords": [
+    "bot",
+    "whatsapp-bot",
+    "anime",
+    "black-md",
+    "botto"
+  ],
+  
+  "website": "https://github.com/Blackie254/black-super-bot#readme",
+  "repository": "https://github.com/Blackie254/black-super-bot.git",
+  "logo": "https://files.catbox.moe/s5nuh3.jpg",
+  "success_url": "/",
+  "env": {
+    "DEV": {
+      "description": "Put any phone numbers you want to be bot owner without + or spaces \",\" Ex: 254114283550,254768792955  ",
+      "value": "254114283550",
+      "required": false
+    },
+    
+    "HEROKU_API": {
+      "description": "Put a Heroku api key here, will be required to update bot in your Dm",
+      "required": false
+    },
+  
+ "SESSION": {
+      "description": "Paste your Session id here, as it is required for authenticationn.",
+      "required": true
+},
+ 
+ "APP_NAME": {
+      "description": "Input your app name that you put above, Must be in small letters.",
+      "required": false
+}
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },    
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-activestorage-preview"
+    }
+  ],
+  "addons": [
+    {
+      "plan": "heroku-postgresql:essential-0"
+    }
+  ]
+    }
